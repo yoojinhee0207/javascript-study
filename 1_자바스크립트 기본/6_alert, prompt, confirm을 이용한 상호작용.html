@@ -1,0 +1,31 @@
+<!--
+alert, prompt, confirm을 이용한 상호작용
+
+-alert: 
+메시지 보여줌
+-prompt:
+사용자에게 텍스트를 입력하라는 메시지를 띄워줌과 동시에 입력 필드를 함께 제공
+확인을 누르면 prompt 함수는 사용자가 입력한 문자열을 반환하고 취소 또는 Esc를 누르면 null 반환
+-confirm:
+사용자가 확인 또는 취소 버튼을 누를때까지 메시지가 창에 보여짐
+사용자가 확인 버튼을 누르면 true, 취소버튼이나 Esc를 누르면 false 반환
+
+위함수는 모두 모달창을 띄워주는데 떠있는 동안에는 스크립트 실행이 일시 중단됨
+
+1. 모달창의 위치는 브라우저 중앙에 위치됨
+2. 개발자가 모달창의 모양을 수정하지 X
+-->
+<script>
+//alert
+alert('hello');
+
+//prompt
+let value = 0;
+result = prompt("안녕", [value]);//[]는 선택값
+
+//confirm
+result = confirm("안녕?");
+
+userName = prompt("당신의 이름은?","");
+result = confirm(`당신의 이름은 ${userName}이(가) 맞습니까?`);
+</script>
