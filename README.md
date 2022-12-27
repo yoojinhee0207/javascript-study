@@ -1,2 +1,2 @@
-# javascript_study
+# javascript-study
 https://ko.javascript.info/
