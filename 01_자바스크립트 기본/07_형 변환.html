@@ -1,0 +1,22 @@
+<script>
+    /*형 변환
+
+    1.문자열: String(value)
+    2.숫자: Number(value)*이 때 변환할 수 없는 문자열 등을 넣으면 NaN이 뜸
+    -undefined: NaN
+    -null: 0
+    -boolean(true/false): 1/0
+    -string: 처음 끝 공백 제거 후, 문자열이 없으면 0, 있다면 숫자를 읽어서 변환(실패하면 NaN)
+    3.불린: Boolean
+    -숫자 0, 빈문자열, null, undefined, NaN과 같이 직관적으로도 "비어있다고" 느껴지는 값들은 false
+    -그 외의 값은 true
+    -"0",""은 비어있지 않은 문자열이므로 true임
+    */
+
+    alert(typeof(String(true)));
+
+    alert(typeof(Number("123")));
+
+    alert(typeof(Boolean(0)));
+
+</script>

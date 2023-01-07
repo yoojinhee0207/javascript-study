@@ -1,0 +1,24 @@
+<script>
+    /*논리 연산자
+
+    1. OR연산자(||)는 주어진 조건 중 하나라도 참(true)인지 테스트 하는 용도로 사용된다.
+    2. OR연산자(||)는 첫번째 truthy의 원래값을 반환한다. (첫번째 truthy를 찾는 용도로 사용된다. 만약 모두 falsy라면 마지막 피연산자를 반환한다.)
+    - 변수 또는 표현식으로 구성된 목록에서 첫 번째 truthy 얻기
+    - 단락평가 ( 단란평가란, 왼쪽부터 시작해서 오른쪽으로 단위별 평가하는 것 ex) true || alert("not printed");)
+    3. AND연산자(&&)는 주어진 조건이 모두 참(true)인지 테스트하는 용도로 사용된다.
+    4. AND연산자(&&)는 첫번째 falsy의 원래값을 반환한다.(첫번째 falsy를 찾는 용도로 사용된다. 만약 모두 true라면 마지막 피연산자를 반환한다.)
+    - &&의 우선순위가 ||보다 높다. ex) a && b || c && d 는 (a && b) || (c && d)와 같음.
+    5. NOT연산자(!)는 인수를 불린형으로 반환한뒤, 그 값의 역을 반환한다.
+    6. alert( alert(1) || 2 || alert(3) ); 은 어떻게 될까?
+    ※ alert()은 반환값이 없다. undefined를 반환한다.
+    */
+
+   let re1=true||false//true or 연산자
+   alert(""|""|"유진희"|"익명");//"유진희"
+   
+   let re2=true&&false//false and 연산자
+    alert("유진희"|""|"");//""
+
+    let re3=!true;//false
+    alert(!!"0")//false Boolean형
+</script>
